@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  background: linear-gradient(90deg, #eed0fdf2, #ac1ff1d4);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* main container style  */
+.main-container {
+  width: 60vw;
+  background-color: rgb(37 1 78 / 24%);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-danger {
+  color: rgb(171 0 16) !important;
+}
+
+.input-part {
+  width: 30px;
+  height: 25px;
+  background-color: #00000033;
+  border: none;
+  border-radius: 2px;
+}
+
+.password-input {
+  width: 900px;
+}
+
+
+/* responsive part  */
+@media (max-width:915px) {
+  .label-style {
+    font-size: 12px;
+  }
+
+  .input-part {
+    width: 25px;
+    height: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width:803px) {
+  .label-style {
+    font-size: 10px;
+  }
+
+  .input-part {
+    width: 22px;
+    height: 19px;
+  }
+
+  .password-input {
+    font-size: 10px;
+  }
+
+  .main-container h3 {
+    font-size: 1rem;
+  }
+
+  .main-container p {
+    font-size: 10px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+@media (max-width:749px) {
+
+  .label-style {
+    font-size: 12px;
+  }
+
+  .input-part {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+
+  .input-part-font {
+    font-size: 10px;
+  }
+
+  .main-container {
+    width: auto;
+  }
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:430px) {
+
+  .label-style {
+    font-size: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form-container {
+    flex-direction: column;
   }
+
+  .mx-2 {
+    margin-top: 0.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .password-input {
+    width: auto;
+  }
+
+  .chechbox-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+@media (max-width:300px) {
+
+  .label-style {
+    font-size: 14px;
+  }
+
+  .pass-container {
+    display: flex;
+  }
+
+  .main-container h3 {
+    font-size: 14px;
+  }
+
 }
